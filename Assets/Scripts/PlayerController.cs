@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Camera cam1;
     public Camera cam2;
     public string inputID;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         // Rotate the car based on horizontal input
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 
+        // Change the camera
         if (Input.GetKeyDown(KeyCode.C))
         {
             cam1.enabled = !cam1.enabled;
