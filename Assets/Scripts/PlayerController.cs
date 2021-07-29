@@ -9,9 +9,11 @@ public class PlayerController : MonoBehaviour
     private float turnSpeed = 45.0f;
     private float horizontalInput;
     private float forwardInput;
+
+    // Public variables
     public Camera cam1;
     public Camera cam2;
-
+    public string inputID;
     // Start is called before the first frame update
     void Start()
     {
