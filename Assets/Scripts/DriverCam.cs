@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DriverCam : MonoBehaviour
 {
+    public GameObject driver;
+    private Vector3 offset = new Vector3(-0.08f, 1.61f, 1.61f);
     // Start is called before the first frame update
     void Start()
     {
@@ -11,8 +13,9 @@ public class DriverCam : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        transform.position = driver.transform.position + offset;
+        transform.rotation = driver.transform.rotation;
     }
 }
