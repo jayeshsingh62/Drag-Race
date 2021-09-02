@@ -7,8 +7,10 @@ public class PlayerController : MonoBehaviour
     // Private variables
     //[SerializeField] private float speed = 15.0f;
     [SerializeField] private float turnSpeed = 45.0f;
+    [SerializeField] private float horsePower = 0;
     private float horizontalInput;
     private float forwardInput;
+    private Rigidbody playerRb;
 
     // Public variables
     public Camera cam1;
