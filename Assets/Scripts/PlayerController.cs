@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float forwardInput;
     private Rigidbody playerRb;
-
+    [SerializeField] GameObject centerOfMass;
     // Public variables
     public Camera cam1;
     public Camera cam2;
