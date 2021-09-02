@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         cam1.enabled = true;
         cam2.enabled = false;
+        playerRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
