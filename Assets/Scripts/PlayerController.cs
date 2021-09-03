@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         cam1.enabled = true;
         cam2.enabled = false;
         playerRb = GetComponent<Rigidbody>();
-        playerRb.centerOfMass = centerOfMass.transform.position;
+        //playerRb.centerOfMass = centerOfMass.transform.position;
     }
 
     // Update is called once per frame
