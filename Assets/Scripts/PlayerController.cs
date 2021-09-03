@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private float forwardInput;
     private Rigidbody playerRb;
     [SerializeField] GameObject centerOfMass;
+    [SerializeField] TextMeshProUGUI speedometerText;
+
     // Public variables
     public Camera cam1;
     public Camera cam2;
