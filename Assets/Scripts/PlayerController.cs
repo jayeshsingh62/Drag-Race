@@ -53,5 +53,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         speed = Mathf.Round(playerRb.velocity.magnitude * 2.237f); //change 2.237 to 3.6 for kph
+        speedometerText.SetText("Speed: " + speed + "mph");
     }
 }
