@@ -49,4 +49,9 @@ public class PlayerController : MonoBehaviour
             cam2.enabled = !cam2.enabled;
         }
     }
+
+    private void Update()
+    {
+        
+    }
 }
