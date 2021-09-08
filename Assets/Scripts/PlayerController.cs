@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     // Private variables
     [SerializeField] private float speed;
+    [SerializeField] float rpm;
     [SerializeField] private float turnSpeed = 45.0f;
     [SerializeField] private float horsePower = 0;
     private float horizontalInput;
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     [SerializeField] GameObject centerOfMass;
     [SerializeField] TextMeshProUGUI speedometerText;
+    [SerializeField] TextMeshProUGUI rpmText;
 
     // Public variables
     public Camera cam1;
