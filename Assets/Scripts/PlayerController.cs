@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
         speed = Mathf.Round(playerRb.velocity.magnitude * 2.237f); //change 2.237 to 3.6 for kph
         speedometerText.SetText("Speed: " + speed + "mph");
 
-        rpm = (speed % 30) * 40;
+        rpm = Mathf.Round((speed % 30) * 40);
         rpmText.SetText("RPM: " + rpm);
     }
 }
