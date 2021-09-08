@@ -62,4 +62,24 @@ public class PlayerController : MonoBehaviour
         rpm = Mathf.Round((speed % 30) * 40);
         rpmText.SetText("RPM: " + rpm);
     }
+
+    bool isOnGround()
+    {
+        wheelsOnGround = 0;
+        foreach (WheelCollider wheel in allWheels)
+        {
+            if (wheel.isGrounded)
+            {
+                wheelsOnGround++;
+            }
+        }
+        if(wheelsOnGround == 4)
+        {
+           return true;
+        }
+        else
+        {
+           return false;
+        }
+    }
 }
