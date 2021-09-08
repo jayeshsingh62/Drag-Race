@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject centerOfMass;
     [SerializeField] TextMeshProUGUI speedometerText;
     [SerializeField] TextMeshProUGUI rpmText;
+    [SerializeField] List<WheelCollider> allWheels;
+    [SerializeField] int wheelsOnGround;
 
     // Public variables
     public Camera cam1;
