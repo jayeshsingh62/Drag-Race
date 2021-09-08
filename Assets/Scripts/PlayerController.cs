@@ -40,11 +40,14 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal1");
         forwardInput = Input.GetAxis("Vertical1");
 
-        // Move the vehicle forward based on vertical input
-        //transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        playerRb.AddRelativeForce(Vector3.forward * horsePower * forwardInput);
-        // Rotate the car based on horizontal input
-        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+        if (isOnGround())
+        {
+            // Move the vehicle forward based on vertical input
+            //transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+            playerRb.AddRelativeForce(Vector3.forward * horsePower * forwardInput);
+            // Rotate the car based on horizontal input
+            transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+        }
 
         // Change the camera
         if (Input.GetKeyDown(KeyCode.C))
