@@ -1,2 +1,2 @@
-# Prototype-1
-A prototype containing a car driving down a road with obstacles in its path
+# Drag-Race
+A prototype having split screen with players competing in a drag race
